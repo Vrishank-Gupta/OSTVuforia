@@ -11,167 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e518a44f-f32b-417e-b49e-bb499ff3a2da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Vuforia.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CuriousMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CuriousMe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/mumet/abatidoda/curiousme/VideoPlayback/test/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/mumet/abatidoda/curiousme/VideoPlayback/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/mumet/abatidoda/curiousme/VideoPlayback/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/Prova.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/Prova.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/StonesAndChips.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/StonesAndChips.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/VP_about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/VuforiaSizzleReel_1.m4v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/VuforiaSizzleReel_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/VuforiaSizzleReel_2.m4v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/VuforiaSizzleReel_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/busy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/VideoPlayback/play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/androidTest/debug/com/mumet/abatidoda/curiousme/VideoPlayback/test/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationSession$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationSession$InitVuforiaTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationSession$LoadTrackerTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/CubeObject$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/CubeObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/CubeShaders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/LineShaders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/LoadingDialogHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/MeshObject$BUFFER_TYPE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/MeshObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplication3DModel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplication3DModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplicationGLView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplicationGLView$ConfigChooser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplicationGLView$ContextFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplicationGLView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/Teapot$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/Teapot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/SampleApplication/utils/Texture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$dimen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/FullscreenPlayback$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/FullscreenPlayback$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/FullscreenPlayback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/KeyFrameShaders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayback$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayback$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayback$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlaybackRenderer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlaybackRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlaybackShaders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayerHelper$MEDIA_STATE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayerHelper$MEDIA_TYPE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayerHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/ActivityList/AboutScreen$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/ActivityList/AboutScreen$AboutWebViewClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/ActivityList/AboutScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/ActivityList/ActivitySplashScreen$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/ActivityList/ActivitySplashScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenu$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenu$GestureListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenu$GestureListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenuAnimator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenuGroup$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenuGroup$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenuGroup$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenuGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenuInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/mumet/abatidoda/curiousme/VideoPlayback/ui/SampleAppMenu/SampleAppMenuView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/aidl/androidTest/debug/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/aidl/debug/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/androidTest/debug/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesandroidTest/debug/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesdebug/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/Vuforia-8d52dcb9f904083828c57eee5c3696553fcc1946.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-ldpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-ldpi/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-xhdpi/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-xxhdpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-xxhdpi/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/icon_old.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/jono.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/vuforia_splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/about_screen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/camera_overlay.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fullscreen_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/sample_app_menu_group.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/sample_app_menu_group_divider.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/sample_app_menu_group_radio_button.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/sample_app_menu_layer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/splash_screen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hdpi/values-hdpi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ldpi/values-ldpi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-mdpi/values-mdpi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v13/values-v13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-xhdpi/values-xhdpi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-xxhdpi/values-xxhdpi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/SampleApplicationControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/SampleApplicationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/SampleApplicationSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/SampleApplicationSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/CubeObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/CubeObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/CubeShaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/CubeShaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/LineShaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/LineShaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/LoadingDialogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/LoadingDialogHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/MeshObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/MeshObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplication3DModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/SampleApplication3DModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleApplicationGLView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/SampleApplicationGLView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/SampleMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/SampleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/SampleUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/Teapot.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/Teapot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/SampleApplication/utils/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/Application1/utils/Texture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlayback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlaybackRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mumet/abatidoda/curiousme/VideoPlayback/app/VideoPlayback/VideoPlaybackRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-    </list>
+    <list default="true" id="e518a44f-f32b-417e-b49e-bb499ff3a2da" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2671,7 +2511,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
@@ -2682,13 +2521,13 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Logcat" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.2739394" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info anchor="bottom" id="Build" weight="0.2739394" />
       <window_info anchor="right" id="Gradle" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" />
