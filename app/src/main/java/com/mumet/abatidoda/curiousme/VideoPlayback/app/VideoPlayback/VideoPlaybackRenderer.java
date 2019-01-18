@@ -34,10 +34,10 @@ import com.qualcomm.vuforia.VIDEO_BACKGROUND_REFLECTION;
 import com.qualcomm.vuforia.Vec2F;
 import com.qualcomm.vuforia.Vec3F;
 import com.qualcomm.vuforia.Vuforia;
-import com.mumet.abatidoda.curiousme.SampleApplication.SampleApplicationSession;
-import com.mumet.abatidoda.curiousme.SampleApplication.utils.SampleMath;
-import com.mumet.abatidoda.curiousme.SampleApplication.utils.SampleUtils;
-import com.mumet.abatidoda.curiousme.SampleApplication.utils.Texture;
+import com.mumet.abatidoda.curiousme.Application1.SampleApplicationSession;
+import com.mumet.abatidoda.curiousme.Application1.utils.SampleMath;
+import com.mumet.abatidoda.curiousme.Application1.utils.SampleUtils;
+import com.mumet.abatidoda.curiousme.Application1.utils.Texture;
 import com.mumet.abatidoda.curiousme.VideoPlayback.app.VideoPlayback.VideoPlayerHelper.MEDIA_STATE;
 import com.mumet.abatidoda.curiousme.VideoPlayback.app.VideoPlayback.VideoPlayerHelper.MEDIA_TYPE;
 

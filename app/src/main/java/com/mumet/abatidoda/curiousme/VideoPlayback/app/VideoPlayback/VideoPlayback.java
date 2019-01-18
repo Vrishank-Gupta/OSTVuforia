@@ -1,10 +1,3 @@
-/*===============================================================================
-Copyright (c) 2012-2014 Qualcomm Connected Experiences, Inc. All Rights Reserved.
-
-Vuforia is a trademark of QUALCOMM Incorporated, registered in the United States 
-and other countries. Trademarks of QUALCOMM Incorporated are used with permission.
-===============================================================================*/
-
 package com.mumet.abatidoda.curiousme.VideoPlayback.app.VideoPlayback;
 
 import java.util.Vector;
@@ -38,12 +31,12 @@ import com.qualcomm.vuforia.Trackable;
 import com.qualcomm.vuforia.Tracker;
 import com.qualcomm.vuforia.TrackerManager;
 import com.qualcomm.vuforia.Vuforia;
-import com.mumet.abatidoda.curiousme.SampleApplication.SampleApplicationControl;
-import com.mumet.abatidoda.curiousme.SampleApplication.SampleApplicationException;
-import com.mumet.abatidoda.curiousme.SampleApplication.SampleApplicationSession;
-import com.mumet.abatidoda.curiousme.SampleApplication.utils.LoadingDialogHandler;
-import com.mumet.abatidoda.curiousme.SampleApplication.utils.SampleApplicationGLView;
-import com.mumet.abatidoda.curiousme.SampleApplication.utils.Texture;
+import com.mumet.abatidoda.curiousme.Application1.SampleApplicationControl;
+import com.mumet.abatidoda.curiousme.Application1.SampleApplicationException;
+import com.mumet.abatidoda.curiousme.Application1.SampleApplicationSession;
+import com.mumet.abatidoda.curiousme.Application1.utils.LoadingDialogHandler;
+import com.mumet.abatidoda.curiousme.Application1.utils.SampleApplicationGLView;
+import com.mumet.abatidoda.curiousme.Application1.utils.Texture;
 import com.mumet.abatidoda.curiousme.VideoPlayback.R;
 import com.mumet.abatidoda.curiousme.VideoPlayback.app.VideoPlayback.VideoPlayerHelper.MEDIA_STATE;
 import com.mumet.abatidoda.curiousme.VideoPlayback.ui.ActivityList.AboutScreen;
@@ -109,8 +102,8 @@ public class VideoPlayback extends Activity implements
     static final int UPDATE_ERROR_NO_NETWORK_CONNECTION = -3;
     static final int UPDATE_ERROR_SERVICE_NOT_AVAILABLE = -4;
     private boolean mExtendedTracking = false;
-    private static final String kAccessKey = "INSERT ACCESS KEY HERE";
-    private static final String kSecretKey = "INSERT SECRET KEY HERE";
+    private static final String kAccessKey = "2d131fce3791b5f03f3ccd0dbdf9e5e6d99cf2fd";
+    private static final String kSecretKey = "d0a6c51077ad70d519f2c3337e5533ea8e1295d8";
     private int mInitErrorCode = 0;
 
     // Called when the activity first starts or the user navigates back
