@@ -3,7 +3,6 @@
     package="com.mumet.abatidoda.curiousme.VideoPlayback"
     android:versionCode="200"
     android:versionName="5.0">
-    <uses-sdk android:targetSdkVersion="19" />
 
     <uses-feature android:glEsVersion="0x00020000" />
     <uses-feature android:name="android.hardware.camera" />
