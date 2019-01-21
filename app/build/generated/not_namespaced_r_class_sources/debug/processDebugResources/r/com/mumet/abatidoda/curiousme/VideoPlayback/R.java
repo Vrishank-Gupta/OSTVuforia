@@ -26,7 +26,7 @@ public final class R {
     public static final int menu_title_padding=0x7f020006;
   }
   public static final class drawable {
-    public static final int icon=0x7f030000;
+    public static final int image=0x7f030000;
     public static final int logo=0x7f030001;
     public static final int vuforia_splash=0x7f030002;
   }

@@ -4,10 +4,6 @@
         "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable-mdpi/logo.png"
     },
     {
-        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable_icon.png.flat",
-        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable/icon.png"
-    },
-    {
         "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/layout_sample_app_menu_layer.xml.flat",
         "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/layout/sample_app_menu_layer.xml"
     },
@@ -20,12 +16,12 @@
         "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/layout/sample_app_menu_group_divider.xml"
     },
     {
-        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable_vuforia_splash.png.flat",
-        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable/vuforia_splash.png"
+        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable-mdpi_image.png.flat",
+        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable-mdpi/image.png"
     },
     {
-        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable-xxhdpi_icon.png.flat",
-        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable-xxhdpi/icon.png"
+        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable_vuforia_splash.png.flat",
+        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable/vuforia_splash.png"
     },
     {
         "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable-xhdpi_logo.png.flat",
@@ -38,18 +34,6 @@
     {
         "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/layout_camera_overlay.xml.flat",
         "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/layout/camera_overlay.xml"
-    },
-    {
-        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable-ldpi_icon.png.flat",
-        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable-ldpi/icon.png"
-    },
-    {
-        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon.png.flat",
-        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable-xhdpi/icon.png"
-    },
-    {
-        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
-        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable-hdpi/icon.png"
     },
     {
         "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/layout_sample_app_menu_group.xml.flat",
@@ -78,9 +62,5 @@
     {
         "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/layout_fullscreen_layout.xml.flat",
         "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/layout/fullscreen_layout.xml"
-    },
-    {
-        "merged": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat",
-        "source": "/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/res/drawable-mdpi/icon.png"
     }
 ]

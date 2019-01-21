@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-63:12
-INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-63:12
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:3:5-58
 		INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml
@@ -42,81 +42,87 @@ ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManif
 	android:name
 		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:13:5-79
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:13:22-77
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:14:22-77
 application
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:14:5-61:19
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:15:5-64:19
 	android:label
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:17:9-41
 	android:launchMode
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:18:9-40
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:19:9-40
 	android:icon
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:15:9-38
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:16:9-39
 	android:allowBackup
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:20:9-35
 	android:description
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:17:9-54
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:18:9-54
 	android:theme
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:20:9-47
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:21:9-47
+uses-library#org.apache.http.legacy
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:23:9-87
+	android:required
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:23:61-85
+	android:name
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:23:23-60
 activity#com.mumet.abatidoda.curiousme.VideoPlayback.ui.ActivityList.ActivitySplashScreen
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:22:10-33:21
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:25:9-36:21
 	android:screenOrientation
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:25:13-49
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:28:13-49
 	android:noHistory
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:26:13-37
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:29:13-37
 	android:configChanges
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:24:13-63
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:27:13-63
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:23:13-108
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:26:13-108
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:28:13-32:29
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:29:17-69
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:29:25-66
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:31:17-77
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:34:27-74
 activity#com.mumet.abatidoda.curiousme.VideoPlayback.ui.ActivityList.AboutScreen
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:35:10-40:20
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:38:10-43:20
 	android:screenOrientation
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:38:13-49
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:41:13-49
 	android:configChanges
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:37:13-63
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:40:13-63
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:36:13-99
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:39:13-99
 activity#com.mumet.abatidoda.curiousme.VideoPlayback.app.VideoPlayback.VideoPlayback
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:42:9-47:15
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:45:9-50:15
 	android:launchMode
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:46:11-42
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:49:11-42
 	android:configChanges
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:44:13-93
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:47:13-93
 	android:theme
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:45:10-48
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:48:10-48
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:43:13-103
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:46:13-103
 activity#com.mumet.abatidoda.curiousme.VideoPlayback.app.VideoPlayback.FullscreenPlayback
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:48:9-59:20
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:51:9-62:20
 	android:screenOrientation
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:52:11-48
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:55:11-48
 	android:label
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:48:19-51
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:51:19-51
 	android:launchMode
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:51:11-40
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:54:11-40
 	android:exported
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:53:13-37
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:56:13-37
 	android:configChanges
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:50:13-93
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:53:13-93
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:49:13-108
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:52:13-108
 intent-filter#action:name:android.intent.action.VIEW
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:55:13-57:29
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:58:13-60:29
 action#android.intent.action.VIEW
-ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:56:17-69
+ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:56:25-66
+		ADDED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml:59:25-66
 uses-sdk
 INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/vrishankgupta/Desktop/ost/OSTVuforia/app/src/main/AndroidManifest.xml
