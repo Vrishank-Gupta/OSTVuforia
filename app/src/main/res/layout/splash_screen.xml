@@ -20,34 +20,27 @@
 	        android:orientation="horizontal"
 	        android:baselineAligned="false"
         >
-        
-        <View 
-	        android:layout_width="match_parent"
-	        android:layout_height="match_parent"
-	        android:layout_weight="25"
-            />
-        
-        <RelativeLayout 
+        <RelativeLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"
 	        android:layout_weight="25"
             >
-            
-            <View
-		        android:id="@+id/logo_image_base"
-		        android:layout_width="match_parent"
-		        android:layout_height="1dp"
-		        android:layout_centerVertical="true"
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/image"
+                android:id="@+id/logo_img"
+                android:layout_marginTop="250dp"
+                android:layout_centerHorizontal="true"
                 />
             
 		    <ImageView 
 		        android:id="@+id/logo_image"
-		        android:layout_width="match_parent"
-		        android:layout_height="match_parent"
-		        android:scaleType="centerInside"
-		        android:layout_alignParentRight="true"
-		        android:layout_below="@+id/logo_image_base"
-		        android:layout_marginRight="25dp"
+                android:layout_below="@id/logo_img"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+                android:padding="20dp"
 		        android:src="@drawable/logo"
 		        android:contentDescription="@string/splash_screen_description"
 		        />

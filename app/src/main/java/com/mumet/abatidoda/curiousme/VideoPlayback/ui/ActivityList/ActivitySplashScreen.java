@@ -36,27 +36,27 @@ public class ActivitySplashScreen extends Activity
         addContentView(layout, new LayoutParams(LayoutParams.MATCH_PARENT,
             LayoutParams.MATCH_PARENT));
         
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable()
-        {
-            
-            @Override
-            public void run()
-            {
-                
-//                Intent intent = new Intent(ActivitySplashScreen.this,
-//                    AboutScreen.class);
-//                intent.putExtra("ACTIVITY_TO_LAUNCH",
-//                    "app.VideoPlayback.VideoPlayback");
-//                intent.putExtra("ABOUT_TEXT_TITLE", "Video Playback");
-//                intent.putExtra("ABOUT_TEXT", "VideoPlayback/VP_about.html");
-                    Intent intent = new Intent(ActivitySplashScreen.this,
-                    VideoPlayback.class);
-                startActivity(intent);
-                
-            }
-            
-        }, SPLASH_MILLIS);
+//        final Handler handler = new Handler();
+//        handler.postDelayed(new Runnable()
+//        {
+//
+//            @Override
+//            public void run()
+//            {
+//
+////                Intent intent = new Intent(ActivitySplashScreen.this,
+////                    AboutScreen.class);
+////                intent.putExtra("ACTIVITY_TO_LAUNCH",
+////                    "app.VideoPlayback.VideoPlayback");
+////                intent.putExtra("ABOUT_TEXT_TITLE", "Video Playback");
+////                intent.putExtra("ABOUT_TEXT", "VideoPlayback/VP_about.html");
+//                    Intent intent = new Intent(ActivitySplashScreen.this,
+//                    VideoPlayback.class);
+//                startActivity(intent);
+//
+//            }
+//
+//        }, SPLASH_MILLIS);
     }
     
 }

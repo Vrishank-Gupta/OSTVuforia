@@ -37,7 +37,7 @@ public final class R {
     public static final int camera_overlay_layout=0x7f040003;
     public static final int loading_indicator=0x7f040004;
     public static final int logo_image=0x7f040005;
-    public static final int logo_image_base=0x7f040006;
+    public static final int logo_img=0x7f040006;
     public static final int menu_group_title=0x7f040007;
     public static final int menu_group_title_divider=0x7f040008;
     public static final int settings_menu=0x7f040009;

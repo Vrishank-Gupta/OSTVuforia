@@ -1,4 +1,4 @@
-#Tue Jan 22 01:01:18 IST 2019
+#Tue Jan 22 20:08:18 IST 2019
 base.0=/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/transforms/dexMerger/debug/4
 path.0=classes.dex
 renamed.0=classes.dex

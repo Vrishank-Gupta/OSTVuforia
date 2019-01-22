@@ -2,13 +2,13 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="28"
-    build-mode="FULL"
+    build-mode="COLD"
     density="420dpi"
     format="10"
     plugin-version="3.3.0"
-    timestamp="1548099075848"
+    timestamp="1548170487930"
     token="-6608131224288821785"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -24,57 +24,36 @@
         duration="0" />
 
     <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
-    <artifact
         location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1548099075848"
+        timestamp="1548167812497"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -83,26 +62,42 @@
             location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1548167894253"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1548168562784"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1548170487930"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/vrishankgupta/Desktop/ost/OSTVuforia/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
