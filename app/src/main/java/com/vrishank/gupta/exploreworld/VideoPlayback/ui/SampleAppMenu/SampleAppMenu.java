@@ -23,7 +23,6 @@ import android.widget.TextView;
 import com.vrishank.gupta.exploreworld.VideoPlayback.R;
 
 
-// Handles the sample apps menu settings
 public class SampleAppMenu
 {
     
@@ -56,15 +55,7 @@ public class SampleAppMenu
     
     boolean mIsBelowICS = Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH;
     
-    
-    // Parameters:
-    // menuInterface - Reference to the object which will be handling the
-    // processes from the menu entries
-    // activity - The activity where the swipe menu will be used
-    // menuTitle - Title to be displayed
-    // movableView - SurfaceView where the OpenGL rendering is done
-    // listView - Parent view where the settings layout will be attached
-    // additionalViewToHide - Additional view to move with openGl view
+
     public SampleAppMenu(SampleAppMenuInterface menuInterface,
         Activity activity, String menuTitle, GLSurfaceView movableView,
         RelativeLayout parentView, ArrayList<View> additionalViewsToHide)
@@ -104,8 +95,10 @@ public class SampleAppMenu
         activity.getWindowManager().getDefaultDisplay().getMetrics(metrics);
         mScreenWidth = metrics.widthPixels;
         
-        // Used to set the listView length depending on the glView width
         ViewTreeObserver vto = mMovableView.getViewTreeObserver();
+
+
+
         vto.addOnGlobalLayoutListener(new OnGlobalLayoutListener()
         {
             @SuppressWarnings("deprecation")
@@ -150,7 +143,6 @@ public class SampleAppMenu
         {
             setSwipingMenu(false);
             
-            // Hides the menu if it is not docked when releasing
             if (!isMenuDisplaying()
                 || getViewX(mMovableView) < (mScreenWidth * SETTINGS_MENU_SCREEN_PERCENTAGE))
             {

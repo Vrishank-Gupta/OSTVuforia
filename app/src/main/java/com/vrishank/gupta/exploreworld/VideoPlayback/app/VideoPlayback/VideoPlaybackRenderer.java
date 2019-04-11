@@ -35,7 +35,6 @@ import com.vrishank.gupta.exploreworld.VideoPlayback.app.VideoPlayback.VideoPlay
 import com.vrishank.gupta.exploreworld.VideoPlayback.app.VideoPlayback.VideoPlayerHelper.MEDIA_TYPE;
 
 
-// The renderer class for the VideoPlayback sample.
 public class VideoPlaybackRenderer implements GLSurfaceView.Renderer
 {
     private static final String LOGTAG = "VideoPlaybackRenderer";

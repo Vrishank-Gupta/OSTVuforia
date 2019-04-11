@@ -1,9 +1,7 @@
 package com.vrishank.gupta.exploreworld.VideoPlayback.ui.ActivityList;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;

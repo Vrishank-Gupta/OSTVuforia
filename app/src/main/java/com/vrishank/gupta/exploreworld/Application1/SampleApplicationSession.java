@@ -452,7 +452,6 @@ public class SampleApplicationSession implements UpdateCallbackInterface
     }
     
     
-    // Stores the orientation depending on the current resources configuration
     private void updateActivityOrientation()
     {
         Configuration config = mActivity.getResources().getConfiguration();
@@ -475,8 +474,6 @@ public class SampleApplicationSession implements UpdateCallbackInterface
     }
     
     
-    // Method for setting / updating the projection matrix for AR content
-    // rendering
     public void setProjectionMatrix()
     {
         CameraCalibration camCal = CameraDevice.getInstance()
@@ -497,7 +494,6 @@ public class SampleApplicationSession implements UpdateCallbackInterface
     }
     
     
-    // Configures the video mode and sets offsets for the camera's image
     private void configureVideoBackground()
     {
         CameraDevice cameraDevice = CameraDevice.getInstance();
@@ -543,9 +539,7 @@ public class SampleApplicationSession implements UpdateCallbackInterface
         Renderer.getInstance().setVideoBackgroundConfig(config);
         
     }
-    
-    // Returns true if Vuforia is initialized, the trackers started and the
-    // tracker data loaded
+
     private boolean isARRunning()
     {
         return mStarted;

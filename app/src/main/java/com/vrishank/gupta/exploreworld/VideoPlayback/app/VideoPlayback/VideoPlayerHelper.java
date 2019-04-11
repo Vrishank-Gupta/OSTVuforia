@@ -18,7 +18,6 @@ import android.util.Log;
 import android.view.Surface;
 
 
-// Helper class for video playback functionality 
 public class VideoPlayerHelper implements OnPreparedListener,
     OnBufferingUpdateListener, OnCompletionListener, OnErrorListener
 {
@@ -39,7 +38,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     private ReentrantLock mMediaPlayerLock = null;
     private ReentrantLock mSurfaceTextureLock = null;
     
-    // This enum declares the possible states a media can have:
     public enum MEDIA_STATE
     {
         REACHED_END     (0),
@@ -65,7 +63,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
         }
     }
     
-    // This enum declares what type of playback we can do, share with the team:
     public enum MEDIA_TYPE
     {
         ON_TEXTURE              (0),
@@ -89,7 +86,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Initializes the VideoPlayerHelper object.
     public boolean init()
     {
         mMediaPlayerLock = new ReentrantLock();
@@ -99,7 +95,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Deinitializes the VideoPlayerHelper object.
     public boolean deinit()
     {
         unload();
@@ -112,14 +107,10 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Loads a movie from a file in the assets folder
     @SuppressLint("NewApi")
     public boolean load(String url, MEDIA_TYPE requestedType,
         boolean playOnTextureImmediately, int seekPosition)
     {
-        // If the client requests that we should be able to play ON_TEXTURE,
-        // then we need to create a MediaPlayer:
-        
         boolean canBeOnTexture = false;
         boolean canBeFullscreen = false;
         
@@ -127,8 +118,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
         mMediaPlayerLock.lock();
         mSurfaceTextureLock.lock();
         
-        // If the media has already been loaded then exit.
-        // The client must first call unload() before calling load again:
+
         if ((mCurrentState == MEDIA_STATE.READY) || (mMediaPlayer != null))
         {
             Log.d(LOGTAG, "Already loaded");
@@ -150,19 +140,13 @@ public class VideoPlayerHelper implements OnPreparedListener,
                     try
                     {
                         mMediaPlayer = new MediaPlayer();
-                        
-                        // This example shows how to load the movie from the
-                        // assets folder of the app
-                        // However, if you would like to load the movie from the
-                        // sdcard or from a network location
-                        // simply comment the three lines below
+
 //                        AssetFileDescriptor afd = mParentActivity.getAssets()
 //                            .openFd(filename);
 //                        mMediaPlayer.setDataSource(afd.getFileDescriptor(),
 //                            afd.getStartOffset(), afd.getLength());
 //                        afd.close();
 
-                        // and uncomment this one
                          mMediaPlayer.setDataSource(url);
                         
                         mMediaPlayer.setOnPreparedListener(this);
@@ -187,9 +171,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
                     }
                 }
             }
-            
-            // If the client requests that we should be able to play FULLSCREEN
-            // then we need to create a FullscreenPlaybackActivity
+
             if ((requestedType == MEDIA_TYPE.FULLSCREEN)
                 || (requestedType == MEDIA_TYPE.ON_TEXTURE_FULLSCREEN))
             {
@@ -200,7 +182,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
                 canBeFullscreen = true;
             }
             
-            // We store the parameters for further use
             mMovieName = url;
             mSeekPosition = seekPosition;
             
@@ -210,8 +191,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
             {
                 mVideoType = MEDIA_TYPE.FULLSCREEN;
                 mCurrentState = MEDIA_STATE.READY;
-            } // If it is pure fullscreen then we're ready otherwise we let the
-              // MediaPlayer load first
+            }
             else if (canBeOnTexture)
                 mVideoType = MEDIA_TYPE.ON_TEXTURE;
             else
@@ -225,10 +205,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
         
         return result;
     }
-    
-    
-    // Unloads the currently loaded movie
-    // After this is called a new load() has to be invoked
+
     public boolean unload()
     {
         mMediaPlayerLock.lock();
@@ -254,7 +231,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Indicates whether the movie can be played on a texture
     public boolean isPlayableOnTexture()
     {
         if ((mVideoType == MEDIA_TYPE.ON_TEXTURE)
@@ -265,7 +241,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Indicates whether the movie can be played fullscreen
     public boolean isPlayableFullscreen()
     {
         if ((mVideoType == MEDIA_TYPE.FULLSCREEN)
@@ -275,22 +250,18 @@ public class VideoPlayerHelper implements OnPreparedListener,
         return false;
     }
     
-    
-    // Return the current status of the movie such as Playing, Paused or Not
-    // Ready
+
     MEDIA_STATE getStatus()
     {
         return mCurrentState;
     }
     
     
-    // Returns the width of the video frame
     public int getVideoWidth()
     {
         if (!isPlayableOnTexture())
         {
             // Log.d( LOGTAG,
-            // "Cannot get the video width if it is not playable on texture");
             return -1;
         }
         
@@ -311,13 +282,11 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Returns the height of the video frame
     public int getVideoHeight()
     {
         if (!isPlayableOnTexture())
         {
             // Log.d( LOGTAG,
-            // "Cannot get the video height if it is not playable on texture");
             return -1;
         }
         
@@ -338,13 +307,11 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Returns the length of the current movie
     public float getLength()
     {
         if (!isPlayableOnTexture())
         {
             // Log.d( LOGTAG,
-            // "Cannot get the video length if it is not playable on texture");
             return -1;
         }
         
@@ -363,16 +330,12 @@ public class VideoPlayerHelper implements OnPreparedListener,
         
         return result;
     }
-    
-    
-    // Request a movie to be played either full screen or on texture and at a
-    // given position
+
     public boolean play(boolean fullScreen, int seekPosition)
     {
         if (fullScreen)
         {
-            // If the play request was for fullscreen playback
-            // We check first whether this was requested upon load time
+
             if (!isPlayableFullscreen())
             {
                 Log.d(LOGTAG,
@@ -382,12 +345,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
             
             if (isPlayableOnTexture())
             {
-                // If it can also play on texture then we forward information
-                // such as whether
-                // it is currently playing (shouldPlayImmediately) and in which
-                // position
-                // it was being played previously (currentSeekPosition)
-                
                 mMediaPlayerLock.lock();
                 
                 if (mMediaPlayer == null)
@@ -418,8 +375,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
                 mMediaPlayerLock.unlock();
             } else
             {
-                // If it cannot play on texture then we set these values to
-                // default
+
                 mPlayerHelperActivityIntent.putExtra("currentSeekPosition", 0);
                 mPlayerHelperActivityIntent.putExtra("shouldPlayImmediately",
                     true);
@@ -431,9 +387,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
                     mPlayerHelperActivityIntent.putExtra("currentSeekPosition",
                         0);
             }
-            
-            // We must pass the current playback orientation of the activity
-            // and the name of the movie currently being played
+
             mPlayerHelperActivityIntent.putExtra("requestedOrientation",
                 ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
             mPlayerHelperActivityIntent.putExtra("movieName", mMovieName);
@@ -444,8 +398,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
             return true;
         } else
         {
-            // If the client requested playback on texture
-            // we must first verify that it is possible
+
             if (!isPlayableOnTexture())
             {
                 Log.d(
@@ -489,7 +442,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
                 }
             }
             
-            // Then simply start playing
             try
             {
                 mMediaPlayer.start();
@@ -507,7 +459,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Pauses the current movie being played
     public boolean pause()
     {
         if (!isPlayableOnTexture())
@@ -549,7 +500,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Stops the current movie being played
     public boolean stop()
     {
         if (!isPlayableOnTexture())
@@ -589,7 +539,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Tells the VideoPlayerHelper to update the data from the video feed
     @SuppressLint("NewApi")
     public byte updateVideoData()
     {
@@ -617,7 +566,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Moves the movie to the requested seek position
     public boolean seekTo(int position)
     {
         if (!isPlayableOnTexture())
@@ -655,7 +603,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Gets the current seek position
     public int getCurrentPosition()
     {
         if (!isPlayableOnTexture())
@@ -683,7 +630,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Sets the volume of the movie to the desired value
     public boolean setVolume(float value)
     {
         if (!isPlayableOnTexture())
@@ -713,19 +659,13 @@ public class VideoPlayerHelper implements OnPreparedListener,
         return result;
     }
     
-    
-    //
-    // The following functions are specific to Android
-    // and will likely not be implemented on other platforms
-    
-    // Gets the buffering percentage in case the movie is loaded from network
+
     public int getCurrentBufferingPercentage()
     {
         return mCurrentBufferingPercentage;
     }
     
     
-    // Listener call for buffering
     public void onBufferingUpdate(MediaPlayer arg0, int arg1)
     {
         // Log.d( LOGTAG, "onBufferingUpdate " + arg1);
@@ -740,7 +680,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // With this we can set the parent activity
     public void setActivity(Activity newActivity)
     {
         mParentActivity = newActivity;
@@ -755,15 +694,12 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // Used to set up the surface texture
     @SuppressLint("NewApi")
     public boolean setupSurfaceTexture(int TextureID)
     {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH)
         {
-            // We create a surface texture where the video can be played
-            // We have to give it a texture id of an already created
-            // OpenGL texture
+
             mSurfaceTextureLock.lock();
             mSurfaceTexture = new SurfaceTexture(TextureID);
             mTextureID = (byte) TextureID;
@@ -785,12 +721,10 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // This is called when the movie is ready for playback
     public void onPrepared(MediaPlayer mediaplayer)
     {
         mCurrentState = MEDIA_STATE.READY;
         
-        // If requested an immediate play
         if (mShouldPlayImmediately)
             play(false, mSeekPosition);
         

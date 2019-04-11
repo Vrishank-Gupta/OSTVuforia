@@ -53,11 +53,9 @@ public class VideoPlayback extends Activity implements
     
     Activity mActivity;
     
-    // Helpers to detect events such as double tapping:
     private GestureDetector mGestureDetector = null;
     private SimpleOnGestureListener mSimpleListener = null;
     
-    // Movie for the Targets:
     public static final int NUM_TARGETS = 2;
     public static final int STONES = 0;
     public static final int CHIPS = 1;
@@ -110,12 +108,8 @@ public class VideoPlayback extends Activity implements
         vuforiaAppSession
             .initAR(this, ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         
-        // Load any sample specific textures:
         mTextures = new Vector<Texture>();
         loadTextures();
-        
-        // Create the gesture detector that will handle the single and
-        // double taps:
         mSimpleListener = new SimpleOnGestureListener();
         mGestureDetector = new GestureDetector(getApplicationContext(),
             mSimpleListener);
@@ -124,56 +118,41 @@ public class VideoPlayback extends Activity implements
         mSeekPosition = 0;
         mWasPlaying = false;
         mMovieName = "";
-        
-        // Create the video player helper that handles the playback of the movie
-        // for the targets:
+
 
         mVideoPlayerHelper = new VideoPlayerHelper();
         mVideoPlayerHelper.init();
         mVideoPlayerHelper.setActivity(this);
 
         
-        // Set the double tap listener:
         mGestureDetector.setOnDoubleTapListener(new OnDoubleTapListener()
         {
             public boolean onDoubleTap(MotionEvent e)
             {
-               // We do not react to this event
                return false;
             }
 
 
             public boolean onDoubleTapEvent(MotionEvent e)
             {
-                // We do not react to this event
                 return false;
             }
 
 
-            // Handle the single tap
             public boolean onSingleTapConfirmed(MotionEvent e)
             {
                 boolean isSingleTapHandled = false;
-                // Do not react if the StartupScreen is being displayed
 
-                // Verify that the tap happened inside the target
                 if (mRenderer!= null && mRenderer.isTapOnScreenInsideTarget(e.getX(),
                     e.getY()))
                 {
-                    // Check if it is playable on texture
                     if (mVideoPlayerHelper.isPlayableOnTexture())
                     {
-                        // We can play only if the movie was paused, ready
-                        // or stopped
                         if ((mVideoPlayerHelper.getStatus() == MEDIA_STATE.PAUSED)
                             || (mVideoPlayerHelper.getStatus() == MEDIA_STATE.READY)
                             || (mVideoPlayerHelper.getStatus() == MEDIA_STATE.STOPPED)
                             || (mVideoPlayerHelper.getStatus() == MEDIA_STATE.REACHED_END))
                         {
-                            // Pause all other media
-//                            pauseAll(i);
-
-                            // If it has reached the end then rewind
                             if ((mVideoPlayerHelper.getStatus() == MEDIA_STATE.REACHED_END))
                                 mSeekPosition = 0;
 
@@ -182,14 +161,11 @@ public class VideoPlayback extends Activity implements
                             mSeekPosition = VideoPlayerHelper.CURRENT_POSITION;
                         } else if (mVideoPlayerHelper.getStatus() == MEDIA_STATE.PLAYING)
                         {
-                            // If it is playing then we pause it
                             mVideoPlayerHelper.pause();
                         }
                     } else if (mVideoPlayerHelper.isPlayableFullscreen())
                     {
-                        // If it isn't playable on texture
-                        // Either because it wasn't requested or because it
-                        // isn't supported then request playback fullscreen.
+
                         mVideoPlayerHelper.play(true,
                             VideoPlayerHelper.CURRENT_POSITION);
                     }
@@ -203,14 +179,11 @@ public class VideoPlayback extends Activity implements
     }
     
     
-    // We want to load specific textures from the APK, which we will later
-    // use for rendering.
+
     private void loadTextures()
     {
         mTextures.add(Texture.loadTextureFromApk(
                 "VideoPlayback/VuforiaSizzleReel_1.png", getAssets()));
-        //mTextures.add(Texture.loadTextureFromApk(
-                //"VideoPlayback/VuforiaSizzleReel_2.png", getAssets()));
         mTextures.add(Texture.loadTextureFromApk("VideoPlayback/play.png",
             getAssets()));
         mTextures.add(Texture.loadTextureFromApk("VideoPlayback/busy.png",
@@ -220,13 +193,11 @@ public class VideoPlayback extends Activity implements
     }
     
     
-    // Called when the activity will start interacting with the user.
     protected void onResume()
     {
         Log.d(LOGTAG, "onResume");
         super.onResume();
         
-        // This is needed for some Droid devices to force portrait
         if (mIsDroidDevice)
         {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -277,13 +248,9 @@ public class VideoPlayback extends Activity implements
             
             if (resultCode == RESULT_OK)
             {
-                // The following values are used to indicate the position in
-                // which the video was being played and whether it was being
-                // played or not:
                 String movieBeingPlayed = data.getStringExtra("movieName");
                 mReturningFromFullScreen = true;
-                
-                // Find the movie that was being played full screen
+
 
                 if (movieBeingPlayed.compareTo(mMovieName) == 0)
                 {
@@ -306,7 +273,6 @@ public class VideoPlayback extends Activity implements
     }
     
     
-    // Called when the system is about to start resuming a previous activity.
     protected void onPause()
     {
         Log.d(LOGTAG, "onPause");
@@ -317,19 +283,11 @@ public class VideoPlayback extends Activity implements
             mGlView.setVisibility(View.INVISIBLE);
             mGlView.onPause();
         }
-        
-        // Store the playback state of the movies and unload them:
 
-        // If the activity is paused we need to store the position in which
-        // this was currently playing:
-        if (mVideoPlayerHelper.isPlayableOnTexture())
-        {
+        if (mVideoPlayerHelper.isPlayableOnTexture()) {
             mSeekPosition = mVideoPlayerHelper.getCurrentPosition();
             mWasPlaying = mVideoPlayerHelper.getStatus() == MEDIA_STATE.PLAYING ? true : false;
         }
-
-        // We also need to release the resources used by the helper, though
-        // we don't need to destroy it:
         if (mVideoPlayerHelper != null)
             mVideoPlayerHelper.unload();
 
@@ -351,12 +309,9 @@ public class VideoPlayback extends Activity implements
         Log.d(LOGTAG, "onDestroy");
         super.onDestroy();
         
-     // If the activity is destroyed we need to release all resources:
         if (mVideoPlayerHelper != null)
             mVideoPlayerHelper.deinit();
         mVideoPlayerHelper = null;
-
-        //ckhdbc sdksdcbsdkcj dscsdic ckdsvbsdnm cxj vsd xvsdx mn ldsmxnc bluvgd djk dfjkhvdf ndfkjv dfb
 
         try
         {
@@ -390,24 +345,19 @@ public class VideoPlayback extends Activity implements
         mUILayout.setVisibility(View.VISIBLE);
         mUILayout.setBackgroundColor(Color.BLACK);
         
-        // Gets a reference to the loading dialog
         loadingDialogHandler.mLoadingDialogContainer = mUILayout
             .findViewById(R.id.loading_indicator);
         
-        // Shows the loading indicator at start
         loadingDialogHandler
             .sendEmptyMessage(LoadingDialogHandler.SHOW_LOADING_DIALOG);
         
-        // Adds the inflated layout to the view
         addContentView(mUILayout, new LayoutParams(LayoutParams.MATCH_PARENT,
                 LayoutParams.MATCH_PARENT));
     }
     
     
-    // Initializes AR application components.
     private void initApplicationAR()
     {
-        // Create OpenGL ES view:
         int depthSize = 16;
         int stencilSize = 0;
         boolean translucent = Vuforia.requiresAlpha();
@@ -417,14 +367,8 @@ public class VideoPlayback extends Activity implements
         
         mRenderer = new VideoPlaybackRenderer(this, vuforiaAppSession);
         mRenderer.setTextures(mTextures);
-        
-        // The renderer comes has the OpenGL context, thus, loading to texture
-        // must happen when the surface has been created. This means that we
-        // can't load the movie from this thread (GUI) but instead we must
-        // tell the GL thread to load it once the surface has been created.
 
         mRenderer.setVideoPlayerHelper(mVideoPlayerHelper);
-        //mRenderer.requestLoad(mMovieName, 0, false);
 
         
         mGlView.setRenderer(mRenderer);
@@ -438,8 +382,7 @@ public class VideoPlayback extends Activity implements
     }
     
     
-    // We do not handle the touch event here, we just forward it to the
-    // gesture detector
+
     public boolean onTouchEvent(MotionEvent event)
     {
         boolean result = false;
@@ -814,7 +757,6 @@ public class VideoPlayback extends Activity implements
                 
                 if (mVideoPlayerHelper.getStatus() == MEDIA_STATE.PLAYING)
                     {
-                        // If it is playing then we pause it
                         mVideoPlayerHelper.pause();
 
                         mVideoPlayerHelper.play(true,
@@ -831,8 +773,7 @@ public class VideoPlayback extends Activity implements
     public void setUrl(String url){
         if(mMovieName!=url) {
             mMovieName = url;
-//            mRenderer.requestLoad(mMovieName, mSeekPosition,
-//                    false);
+
         }
     }
 }

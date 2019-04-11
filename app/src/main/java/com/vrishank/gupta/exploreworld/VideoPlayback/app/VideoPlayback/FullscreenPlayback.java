@@ -45,13 +45,10 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
     private ReentrantLock mMediaControllerLock = null;
     
     
-    // This is called when we need to prepare the view for the media player
     protected void prepareViewForMediaPlayer()
     {
-        // Create the view:
         mVideoView = (VideoView) findViewById(R.id.surface_view);
         
-        // The orientation was passed as an extra by the launching activity:
         setRequestedOrientation(mRequestedOrientation);
         
         mHolder = mVideoView.getHolder();
@@ -66,14 +63,11 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         
         setContentView(R.layout.fullscreen_layout);
         
-        // Create the locks:
         mMediaControllerLock = new ReentrantLock();
         mMediaPlayerLock = new ReentrantLock();
         
-        // Request a view to be used by the media player:
         prepareViewForMediaPlayer();
         
-        // Collect all of the data passed by the launching activity:
         mSeekPosition = getIntent().getIntExtra("currentSeekPosition", 0);
         mMovieName = getIntent().getStringExtra("movieName");
         mRequestedOrientation = getIntent().getIntExtra("requestedOrientation",

@@ -17,19 +17,6 @@ public class VideoPlaybackShaders
         + "   normal = vertexNormal; \n" + "   texCoord = vertexTexCoord; \n"
         + "} \n";
     
-    /*
-     * 
-     * IMPORTANT:
-     * 
-     * The SurfaceTexture functionality from ICS provides the video frames from
-     * the movie in an unconventional format. So we cant use Texture2D but we
-     * need to use the ExternalOES extension.
-     * 
-     * Two things that are important in the shader below. The first is the
-     * extension declaration (first line). The second is the type of the
-     * texSamplerOES uniform.
-     */
-    
     public static final String VIDEO_PLAYBACK_FRAGMENT_SHADER = " \n"
         + "#extension GL_OES_EGL_image_external : require \n"
         + "precision mediump float; \n" 
