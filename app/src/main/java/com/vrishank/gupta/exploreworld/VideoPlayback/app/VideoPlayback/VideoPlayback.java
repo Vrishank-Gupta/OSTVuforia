@@ -238,7 +238,6 @@ public class VideoPlayback extends Activity implements
         mReturningFromFullScreen = false;
     }
     
-    // Called when returning from the full screen player
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         if (requestCode == 1)
@@ -402,12 +401,10 @@ public class VideoPlayback extends Activity implements
         {
             mFinderStarted = true;
 
-            // Get the object tracker:
             TrackerManager trackerManager = TrackerManager.getInstance();
             ObjectTracker objectTracker = (ObjectTracker) trackerManager
                     .getTracker(ObjectTracker.getClassType());
 
-            // Initialize target finder:
             TargetFinder targetFinder = objectTracker.getTargetFinder();
 
             targetFinder.clearTrackables();
@@ -422,12 +419,10 @@ public class VideoPlayback extends Activity implements
         {
             mFinderStarted = false;
 
-            // Get the object tracker:
             TrackerManager trackerManager = TrackerManager.getInstance();
             ObjectTracker objectTracker = (ObjectTracker) trackerManager
                     .getTracker(ObjectTracker.getClassType());
 
-            // Initialize target finder:
             TargetFinder targetFinder = objectTracker.getTargetFinder();
 
             targetFinder.stop();
@@ -441,7 +436,6 @@ public class VideoPlayback extends Activity implements
         TrackerManager tManager = TrackerManager.getInstance();
         Tracker tracker;
 
-        // Indicate if the trackers were initialized correctly
         boolean result = true;
 
         tracker = tManager.initTracker(ObjectTracker.getClassType());
@@ -465,15 +459,12 @@ public class VideoPlayback extends Activity implements
     {
         Log.d(LOGTAG, "initCloudReco");
 
-        // Get the object tracker:
         TrackerManager trackerManager = TrackerManager.getInstance();
         ObjectTracker objectTracker = (ObjectTracker) trackerManager
                 .getTracker(ObjectTracker.getClassType());
 
-        // Initialize target finder:
         TargetFinder targetFinder = objectTracker.getTargetFinder();
 
-        // Start initialization:
         if (targetFinder.startInit(kAccessKey, kSecretKey))
         {
             targetFinder.waitUntilInitFinished();
@@ -495,10 +486,6 @@ public class VideoPlayback extends Activity implements
             return false;
         }
 
-        // Use the following calls if you would like to customize the color of
-        // the UI
-        // targetFinder->setUIScanlineColor(1.0, 0.0, 0.0);
-        // targetFinder->setUIPointColor(0.0, 0.0, 1.0);
 
         return true;
     }
@@ -507,7 +494,6 @@ public class VideoPlayback extends Activity implements
     @Override
     public boolean doDeinitTrackers()
     {
-        // Indicate if the trackers were deinitialized correctly
         boolean result = true;
 
         TrackerManager tManager = TrackerManager.getInstance();
@@ -519,16 +505,12 @@ public class VideoPlayback extends Activity implements
     @Override
     public boolean doStartTrackers()
     {
-        // Indicate if the trackers were started correctly
         boolean result = true;
-
-        // Start the tracker:
         TrackerManager trackerManager = TrackerManager.getInstance();
         ObjectTracker objectTracker = (ObjectTracker) trackerManager
                 .getTracker(ObjectTracker.getClassType());
         objectTracker.start();
 
-        // Start cloud based recognition if we are in scanning mode:
         TargetFinder targetFinder = objectTracker.getTargetFinder();
         targetFinder.startRecognition();
         mFinderStarted = true;
@@ -540,7 +522,6 @@ public class VideoPlayback extends Activity implements
     @Override
     public boolean doStopTrackers()
     {
-        // Indicate if the trackers were stopped correctly
         boolean result = true;
 
         TrackerManager trackerManager = TrackerManager.getInstance();
@@ -551,12 +532,10 @@ public class VideoPlayback extends Activity implements
         {
             objectTracker.stop();
 
-            // Stop cloud based recognition:
             TargetFinder targetFinder = objectTracker.getTargetFinder();
             targetFinder.stop();
             mFinderStarted = false;
 
-            // Clears the trackables
             targetFinder.clearTrackables();
         }
         else
@@ -583,21 +562,14 @@ public class VideoPlayback extends Activity implements
             
             mRenderer.mIsActive = true;
             
-            // Now add the GL surface view. It is important
-            // that the OpenGL ES surface view gets added
-            // BEFORE the camera is started and video
-            // background is configured.
             addContentView(mGlView, new LayoutParams(LayoutParams.MATCH_PARENT,
                 LayoutParams.MATCH_PARENT));
             
-            // Sets the UILayout to be drawn in front of the camera
             mUILayout.bringToFront();
             
-            // Hides the Loading Dialog
             loadingDialogHandler
                 .sendEmptyMessage(LoadingDialogHandler.HIDE_LOADING_DIALOG);
             
-            // Sets the layout background to transparent
             mUILayout.setBackgroundColor(Color.TRANSPARENT);
             
             try
@@ -629,7 +601,6 @@ public class VideoPlayback extends Activity implements
     }
     
     
-    // Shows initialization error messages as System dialogs
     public void showInitializationErrorMessage(String message)
     {
         final String errorMessage = message;
@@ -642,7 +613,6 @@ public class VideoPlayback extends Activity implements
                     mErrorDialog.dismiss();
                 }
                 
-                // Generates an Alert Dialog to show the error message
                 AlertDialog.Builder builder = new AlertDialog.Builder(
                     VideoPlayback.this);
                 builder
@@ -669,20 +639,15 @@ public class VideoPlayback extends Activity implements
     @Override
     public void onQCARUpdate(State state)
     {
-        // Get the tracker manager:
         TrackerManager trackerManager = TrackerManager.getInstance();
 
-        // Get the object tracker:
         ObjectTracker objectTracker = (ObjectTracker) trackerManager
                 .getTracker(ObjectTracker.getClassType());
 
-        // Get the target finder:
         TargetFinder finder = objectTracker.getTargetFinder();
 
-        // Check if there are new results available:
         final int statusCode = finder.updateSearchResults();
 
-        // Show a message if we encountered an error:
         if (statusCode < 0)
         {
 
@@ -694,12 +659,10 @@ public class VideoPlayback extends Activity implements
 
         } else if (statusCode == TargetFinder.UPDATE_RESULTS_AVAILABLE)
         {
-            // Process new search results
             if (finder.getResultCount() > 0)
             {
                 TargetSearchResult result = finder.getResult(0);
 
-                // Check if this target is suitable for tracking:
                 if (result.getTrackingRating() > 0)
                 {
                     Trackable trackable = finder.enableTracking(result);
@@ -715,7 +678,6 @@ public class VideoPlayback extends Activity implements
     final private static int CMD_FULLSCREEN_VIDEO = 1;
     
     
-    // This method sets the menu's settings
     private void setSampleAppMenuSettings()
     {
         SampleAppMenuGroup group;
