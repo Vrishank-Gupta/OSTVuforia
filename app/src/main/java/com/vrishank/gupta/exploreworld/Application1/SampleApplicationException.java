@@ -12,8 +12,6 @@ public class SampleApplicationException extends Exception
     public static final int UNLOADING_TRACKERS_FAILURE = 4;
     public static final int TRACKERS_DEINITIALIZATION_FAILURE = 5;
     public static final int CAMERA_INITIALIZATION_FAILURE = 6;
-    public static final int SET_FOCUS_MODE_FAILURE = 7;
-    public static final int ACTIVATE_FLASH_FAILURE = 8;
 
     private int mCode = -1;
     private String mString = "";
@@ -24,12 +22,6 @@ public class SampleApplicationException extends Exception
         super(description);
         mCode = code;
         mString = description;
-    }
-
-
-    public int getCode()
-    {
-        return mCode;
     }
 
 

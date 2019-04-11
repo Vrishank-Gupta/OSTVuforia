@@ -118,7 +118,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
     }
     
     
-    // This is the call that actually creates the media player
     private void createMediaPlayer()
     {
         mMediaPlayerLock.lock();
@@ -126,20 +125,10 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         
         try
         {
-            // Create the MediaPlayer and its controller:
             mMediaPlayer = new MediaPlayer();
             mMediaController = new MediaController(this);
             
-            // This example shows how to load the movie from the assets
-            // folder of the app. However, if you would like to load the
-            // movie from the SD card or from a network location, simply
-            // comment the four lines below:
-//            AssetFileDescriptor afd = getAssets().openFd(mMovieName);
-//            mMediaPlayer.setDataSource(afd.getFileDescriptor(),
-//                afd.getStartOffset(), afd.getLength());
-//            afd.close();
-            
-            // And uncomment this line:
+
              mMediaPlayer.setDataSource(mMovieName);
             
             mMediaPlayer.setDisplay(mHolder);
@@ -155,13 +144,10 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
             Log.e(LOGTAG,
                 "Error while creating the MediaPlayer: " + e.toString());
             
-            // If something failed then prepare for termination:
             prepareForTermination();
             
-            // Release the resources of the media player:
             destroyMediaPlayer();
             
-            // Then terminate this activity:
             finish();
         }
         
@@ -170,17 +156,12 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
     }
     
     
-    // Handle the touch event
     public boolean onTouchEvent(MotionEvent event)
     {
-        // The touch event is actually handled by the gesture detector
-        // so we just forward the event to it:
         return mGestureDetector.onTouchEvent(event);
     }
     
     
-    // This is a callback we receive when the media player is ready to start
-    // playing
     public void onPrepared(MediaPlayer mediaplayer)
     {
         // Log.d( LOGTAG, "Fullscreen.onPrepared");
@@ -193,17 +174,14 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         {
             if (mVideoView.getParent() != null)
             {
-                // We attach the media controller to the player:
                 mMediaController.setMediaPlayer(player_interface);
                 
-                // Add the media controller to the view:
                 View anchorView = mVideoView.getParent() instanceof View ? (View) mVideoView
                     .getParent() : mVideoView;
                 mMediaController.setAnchorView(anchorView);
                 mVideoView.setMediaController(mMediaController);
                 mMediaController.setEnabled(true);
                 
-                // Move to a given position:
                 try
                 {
                     mMediaPlayer.seekTo(mSeekPosition);
@@ -214,8 +192,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
                     Log.e(LOGTAG, "Could not seek to a position");
                 }
                 
-                // If the client requests that we play immediately
-                // we tell the media player to start:
                 if (mShouldPlayImmediately)
                 {
                     try
@@ -230,7 +206,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
                     }
                 }
                 
-                // Show briefly the controls:
                 mMediaController.show();
             }
         }
@@ -240,10 +215,8 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
     }
     
     
-    // Called when we wish to release the resources of the media player
     private void destroyMediaPlayer()
     {
-        // Release the Media Controller:
         mMediaControllerLock.lock();
         if (mMediaController != null)
         {
@@ -252,7 +225,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         mMediaControllerLock.unlock();
         
-        // Release the MediaPlayer:
         mMediaPlayerLock.lock();
         if (mMediaPlayer != null)
         {
@@ -271,26 +243,21 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
     }
     
     
-    // Called when we wish to destroy the view used by the Media player
     private void destroyView()
     {
-        // Release the View and the Holder:
         mVideoView = null;
         mHolder = null;
     }
     
     
-    // Called when the app is destroyed
     protected void onDestroy()
     {
         // Log.d( LOGTAG, "Fullscreen.onDestroy");
         
-        // Prepare the media player for termination:
         prepareForTermination();
         
         super.onDestroy();
         
-        // Release the resources of the media player:
         destroyMediaPlayer();
         
         mMediaPlayerLock = null;
@@ -298,29 +265,23 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
     }
     
     
-    // Called when the app is resumed
     protected void onResume()
     {
         // Log.d( LOGTAG, "Fullscreen.onResume");
         super.onResume();
         
-        // Prepare a view that the media player can use:
         prepareViewForMediaPlayer();
     }
     
     
-    // Called when the activity configuration has changed
     public void onConfigurationChanged(Configuration config)
     {
         super.onConfigurationChanged(config);
     }
     
     
-    // This is called when we should prepare the media player and the
-    // activity for termination
     private void prepareForTermination()
     {
-        // First we prepare the controller:
         mMediaControllerLock.lock();
         if (mMediaController != null)
         {
@@ -329,14 +290,11 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         mMediaControllerLock.unlock();
         
-        // Then the MediaPlayer:
         mMediaPlayerLock.lock();
         if (mMediaPlayer != null)
         {
-            // We store the position where it was currently playing:
             mSeekPosition = mMediaPlayer.getCurrentPosition();
             
-            // We store the playback mode of the movie:
             boolean wasPlaying = mMediaPlayer.isPlaying();
             if (wasPlaying)
             {
@@ -350,8 +308,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
                 }
             }
             
-            // This activity was started for result, thus we need to return
-            // whether it was playing and in which position:
             Intent i = new Intent();
             i.putExtra("movieName", mMovieName);
             i.putExtra("currentSeekPosition", mSeekPosition);
@@ -364,61 +320,48 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
     
     public void onBackPressed()
     {
-        // Request the media player to prepare for termination:
         prepareForTermination();
         super.onBackPressed();
     }
     
     
-    // Called when the activity is paused
     protected void onPause()
     {
         // Log.d( LOGTAG, "Fullscreen.onPause");
         super.onPause();
         
-        // We first prepare for termination:
         prepareForTermination();
         
-        // Request the release of resource of the media player:
         destroyMediaPlayer();
         
-        // Request the release of resource of the view:
         destroyView();
     }
     
     
-    // Called when the surface is changed
     public void surfaceCreated(SurfaceHolder holder)
     {
-        // Request the creation of a media player:
         createMediaPlayer();
     }
     
     
-    // Called when the surface is changed
     public void surfaceChanged(SurfaceHolder holder, int format, int width,
         int height)
     {
     }
     
     
-    // Called when the surface is destroyed
     public void surfaceDestroyed(SurfaceHolder holder)
     {
     }
     
-    // The following are the predefined methods of the MediaPlayerController
-    // We simply forward the values to/from the MediaPlayer
     private MediaController.MediaPlayerControl player_interface = new MediaController.MediaPlayerControl()
     {
-        // Returns the current buffering percentage
         public int getBufferPercentage()
         {
             return 100;
         }
         
         
-        // Returns the current seek position
         public int getCurrentPosition()
         {
             int result = 0;
@@ -430,7 +373,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         
         
-        // Returns the duration of the movie
         public int getDuration()
         {
             int result = 0;
@@ -442,7 +384,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         
         
-        // Returns whether the movie is currently playing
         public boolean isPlaying()
         {
             boolean result = false;
@@ -455,7 +396,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         
         
-        // Pauses the current playback
         public void pause()
         {
             mMediaPlayerLock.lock();
@@ -474,7 +414,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         
         
-        // Seeks to the required position
         public void seekTo(int pos)
         {
             mMediaPlayerLock.lock();
@@ -493,7 +432,6 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         
         
-        // Starts the playback of the movie
         public void start()
         {
             mMediaPlayerLock.lock();
@@ -512,21 +450,18 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
         }
         
         
-        // Returns whether the movie can be paused
         public boolean canPause()
         {
             return true;
         }
         
         
-        // Returns whether the movie can seek backwards
         public boolean canSeekBackward()
         {
             return true;
         }
         
         
-        // Returns whether the movie can seek forwards
         public boolean canSeekForward()
         {
             return true;
@@ -574,14 +509,10 @@ public class FullscreenPlayback extends Activity implements OnPreparedListener,
                 + "Unloading the media player (" + errorDescription + ", "
                 + extra + ")");
             
-            // If something failed then prepare for termination and
-            // request a finish:
             prepareForTermination();
             
-            // Release the resources of the media player:
             destroyMediaPlayer();
             
-            // Then terminate this activity:
             finish();
             
             return true;

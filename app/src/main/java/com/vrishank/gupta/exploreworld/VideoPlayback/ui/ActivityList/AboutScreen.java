@@ -84,7 +84,6 @@ public class AboutScreen extends Activity implements OnClickListener
     }
 
 
-    // Starts the chosen activity
     private void startARActivity()
     {
         Intent i = new Intent();

@@ -9,12 +9,8 @@ package com.vrishank.gupta.exploreworld.VideoPlayback;
 
 public final class R {
   public static final class color {
-    public static final int black=0x7f010000;
-    public static final int gray=0x7f010001;
-    public static final int holo_light_blue=0x7f010002;
-    public static final int light_gray=0x7f010003;
-    public static final int semi_transparent_black=0x7f010004;
-    public static final int white=0x7f010005;
+    public static final int gray=0x7f010000;
+    public static final int light_gray=0x7f010001;
   }
   public static final class dimen {
     public static final int menu_entries_sides_padding=0x7f020000;
@@ -62,28 +58,17 @@ public final class R {
     public static final int INIT_ERROR_NO_CAMERA_ACCESS=0x7f060002;
     public static final int INIT_LICENSE_ERROR_CANCELED_KEY=0x7f060003;
     public static final int INIT_LICENSE_ERROR_INVALID_KEY=0x7f060004;
-    public static final int INIT_LICENSE_ERROR_MISMATCH_KEY=0x7f060005;
-    public static final int INIT_LICENSE_ERROR_MISSING_KEY=0x7f060006;
-    public static final int INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT=0x7f060007;
-    public static final int INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT=0x7f060008;
-    public static final int INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH=0x7f060009;
-    public static final int INIT_LICENSE_ERROR_UNKNOWN_ERROR=0x7f06000a;
-    public static final int app_description=0x7f06000b;
-    public static final int app_name=0x7f06000c;
-    public static final int button_start=0x7f06000d;
-    public static final int menu_back=0x7f06000e;
-    public static final int menu_camera=0x7f06000f;
-    public static final int menu_camera_back=0x7f060010;
-    public static final int menu_camera_front=0x7f060011;
-    public static final int menu_contAutofocus=0x7f060012;
-    public static final int menu_contAutofocus_error_off=0x7f060013;
-    public static final int menu_contAutofocus_error_on=0x7f060014;
-    public static final int menu_extended_tracking=0x7f060015;
-    public static final int menu_flash=0x7f060016;
-    public static final int menu_flash_error_off=0x7f060017;
-    public static final int menu_flash_error_on=0x7f060018;
-    public static final int menu_playFullscreenVideo=0x7f060019;
-    public static final int splash_screen_description=0x7f06001a;
+    public static final int INIT_LICENSE_ERROR_MISSING_KEY=0x7f060005;
+    public static final int INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT=0x7f060006;
+    public static final int INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT=0x7f060007;
+    public static final int INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH=0x7f060008;
+    public static final int INIT_LICENSE_ERROR_UNKNOWN_ERROR=0x7f060009;
+    public static final int app_description=0x7f06000a;
+    public static final int app_name=0x7f06000b;
+    public static final int button_start=0x7f06000c;
+    public static final int menu_back=0x7f06000d;
+    public static final int menu_playFullscreenVideo=0x7f06000e;
+    public static final int splash_screen_description=0x7f06000f;
   }
   public static final class style {
     public static final int SampleAppsTheme=0x7f070000;

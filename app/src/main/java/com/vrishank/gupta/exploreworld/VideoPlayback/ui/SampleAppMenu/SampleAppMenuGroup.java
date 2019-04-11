@@ -285,7 +285,6 @@ public class SampleAppMenuGroup
             mRadioGroup.check(newRadioButton.getId());
         }
 
-        // Set the listener after changing the UI state to avoid calling the radio button functionality when creating the menu
         newRadioButton.setOnCheckedChangeListener(mOnRadioCheckedListener);
 
         return mRadioGroup;

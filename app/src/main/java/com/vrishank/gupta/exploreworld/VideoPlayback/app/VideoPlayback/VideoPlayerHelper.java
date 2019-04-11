@@ -635,7 +635,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
         if (!isPlayableOnTexture())
         {
             // Log.d( LOGTAG,
-            // "Cannot set the volume of this video since it is not on texture");
             return false;
         }
 
@@ -643,7 +642,6 @@ public class VideoPlayerHelper implements OnPreparedListener,
             || (mCurrentState == MEDIA_STATE.ERROR))
         {
             // Log.d( LOGTAG,
-            // "Cannot set the volume of this video if it is not ready");
             return false;
         }
 
@@ -686,10 +684,8 @@ public class VideoPlayerHelper implements OnPreparedListener,
     }
     
     
-    // To set a value upon completion
     public void onCompletion(MediaPlayer arg0)
     {
-        // Signal that the video finished playing
         mCurrentState = MEDIA_STATE.REACHED_END;
     }
     
