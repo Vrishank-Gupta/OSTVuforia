@@ -72,7 +72,7 @@ public class VideoPlaybackRenderer implements GLSurfaceView.Renderer
     
     // Trackable dimensions
     Vec3F targetPositiveDimensions = new Vec3F();
-    
+
     static int NUM_QUAD_VERTEX = 4;
     static int NUM_QUAD_INDEX = 6;
     
@@ -876,14 +876,14 @@ public class VideoPlaybackRenderer implements GLSurfaceView.Renderer
                 break;
         }
     }
-    
-    
+
+
     boolean isTracking()
     {
         return isTracking;
     }
-    
-    
+
+
     public void setTextures(Vector<Texture> textures)
     {
         mTextures = textures;

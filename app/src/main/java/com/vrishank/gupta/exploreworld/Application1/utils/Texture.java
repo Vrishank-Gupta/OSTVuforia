@@ -20,8 +20,8 @@ public class Texture
     public ByteBuffer mData;    // The pixel data.
     public int[] mTextureID = new int[1];
     public boolean mSuccess = false;
-    
-    
+
+
     public static Texture loadTextureFromApk(String fileName,
         AssetManager assets)
     {
@@ -81,7 +81,7 @@ public class Texture
         
         dataBytes = null;
         data = null;
-        
+
         texture.mSuccess = true;
         return texture;
     }

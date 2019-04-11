@@ -82,8 +82,8 @@ public class AboutScreen extends Activity implements OnClickListener
         mAboutTextTitle.setText(extras.getString("ABOUT_TEXT_TITLE"));
         
     }
-    
-    
+
+
     // Starts the chosen activity
     private void startARActivity()
     {
@@ -91,8 +91,8 @@ public class AboutScreen extends Activity implements OnClickListener
         i.setClassName(mClassToLaunchPackage, mClassToLaunch);
         startActivity(i);
     }
-    
-    
+
+
     @Override
     public void onClick(View v)
     {

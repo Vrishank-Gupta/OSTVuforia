@@ -25,7 +25,7 @@ import com.vrishank.gupta.exploreworld.VideoPlayback.R;
 
 public class SampleAppMenu
 {
-    
+
     protected static final String SwipeSettingsInterface = null;
     private GestureListener mGestureListener;
     private GestureDetector mGestureDetector;

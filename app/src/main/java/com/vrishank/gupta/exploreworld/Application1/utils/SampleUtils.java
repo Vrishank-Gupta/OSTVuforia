@@ -82,8 +82,8 @@ public class SampleUtils
                 "After operation " + op + " got glError 0x"
                     + Integer.toHexString(error));
     }
-    
-    
+
+
     // Transforms a screen pixel to a pixel onto the camera image,
     // taking into account e.g. cropping of camera image to fit different aspect
     // ratio screen.
@@ -99,22 +99,22 @@ public class SampleUtils
         float videoWidth, videoHeight;
         videoWidth = (float) cameraWidth;
         videoHeight = (float) cameraHeight;
-        
+
         if (isPortraitMode)
         {
             // the width and height of the camera are always
             // based on a landscape orientation
-            
+
             // as the camera coordinates are always in landscape
             // we convert the inputs into a landscape based coordinate system
             int tmp = screenX;
             screenX = screenY;
             screenY = screenWidth - tmp;
-            
+
             tmp = screenDX;
             screenDX = screenDY;
             screenDY = tmp;
-            
+
             tmp = screenWidth;
             screenWidth = screenHeight;
             screenHeight = tmp;
@@ -123,15 +123,15 @@ public class SampleUtils
             videoWidth = (float) cameraWidth;
             videoHeight = (float) cameraHeight;
         }
-        
+
         float videoAspectRatio = videoHeight / videoWidth;
         float screenAspectRatio = (float) screenHeight / (float) screenWidth;
-        
+
         float scaledUpX;
         float scaledUpY;
         float scaledUpVideoWidth;
         float scaledUpVideoHeight;
-        
+
         if (videoAspectRatio < screenAspectRatio)
         {
             // the video height will fit in the screen height
@@ -149,38 +149,38 @@ public class SampleUtils
                 + ((scaledUpVideoHeight - (float) screenHeight) / 2.0f);
             scaledUpX = (float) screenX;
         }
-        
+
         if (cameraX != null && cameraX.length > 0)
         {
             cameraX[0] = (int) ((scaledUpX / (float) scaledUpVideoWidth) * videoWidth);
         }
-        
+
         if (cameraY != null && cameraY.length > 0)
         {
             cameraY[0] = (int) ((scaledUpY / (float) scaledUpVideoHeight) * videoHeight);
         }
-        
+
         if (cameraDX != null && cameraDX.length > 0)
         {
             cameraDX[0] = (int) (((float) screenDX / (float) scaledUpVideoWidth) * videoWidth);
         }
-        
+
         if (cameraDY != null && cameraDY.length > 0)
         {
             cameraDY[0] = (int) (((float) screenDY / (float) scaledUpVideoHeight) * videoHeight);
         }
     }
-    
-    
+
+
     public static float[] getOrthoMatrix(float nLeft, float nRight,
         float nBottom, float nTop, float nNear, float nFar)
     {
         float[] nProjMatrix = new float[16];
-        
+
         int i;
         for (i = 0; i < 16; i++)
             nProjMatrix[i] = 0.0f;
-        
+
         nProjMatrix[0] = 2.0f / (nRight - nLeft);
         nProjMatrix[5] = 2.0f / (nTop - nBottom);
         nProjMatrix[10] = 2.0f / (nNear - nFar);
@@ -188,8 +188,8 @@ public class SampleUtils
         nProjMatrix[13] = -(nTop + nBottom) / (nTop - nBottom);
         nProjMatrix[14] = (nFar + nNear) / (nFar - nNear);
         nProjMatrix[15] = 1.0f;
-        
+
         return nProjMatrix;
     }
-    
+
 }

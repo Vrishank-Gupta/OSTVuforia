@@ -242,8 +242,8 @@ public class SampleAppMenuGroup
         
         return returnView;
     }
-    
-    
+
+
     @SuppressLint("InflateParams")
     @SuppressWarnings("deprecation")
     public View addRadioItem(String text, int command, boolean isSelected)
@@ -254,19 +254,19 @@ public class SampleAppMenuGroup
             mRadioGroup.setVisibility(View.VISIBLE);
             mLayout.addView(mRadioGroup, mLayoutParams);
         }
-        
+
         Drawable selectorDrawable = mActivity.getResources().getDrawable(
             selectorResource);
-        
+
         RadioButton newRadioButton = (RadioButton) inflater.inflate(
             R.layout.sample_app_menu_group_radio_button, null, false);
         newRadioButton.setText(text);
-        
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
             newRadioButton.setBackground(selectorDrawable);
         else
             newRadioButton.setBackgroundDrawable(selectorDrawable);
-        
+
         newRadioButton.setTypeface(mFont);
         newRadioButton.setTextSize(mEntriesTextSize);
         newRadioButton.setPadding(mEntriesSidesPadding,
@@ -276,22 +276,22 @@ public class SampleAppMenuGroup
         newRadioButton.setTag(command);
         newRadioButton.setVisibility(View.VISIBLE);
         mRadioGroup.addView(newRadioButton, mLayoutParams);
-        
+
         View divider = inflater.inflate(dividerResource, null);
         mRadioGroup.addView(divider, mLayoutParams);
-        
+
         if (isSelected)
         {
             mRadioGroup.check(newRadioButton.getId());
         }
 
-        // Set the listener after changing the UI state to avoid calling the radio button functionality when creating the menu 
+        // Set the listener after changing the UI state to avoid calling the radio button functionality when creating the menu
         newRadioButton.setOnCheckedChangeListener(mOnRadioCheckedListener);
-        
+
         return mRadioGroup;
     }
-    
-    
+
+
     public LinearLayout getMenuLayout()
     {
         return mLayout;

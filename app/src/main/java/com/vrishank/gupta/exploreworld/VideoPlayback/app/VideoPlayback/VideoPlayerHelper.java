@@ -77,8 +77,8 @@ public class VideoPlayerHelper implements OnPreparedListener,
         {
             this.type = i;
         }
-        
-        
+
+
         public int getNumericType()
         {
             return type;
@@ -305,8 +305,8 @@ public class VideoPlayerHelper implements OnPreparedListener,
         
         return result;
     }
-    
-    
+
+
     public float getLength()
     {
         if (!isPlayableOnTexture())
@@ -314,20 +314,20 @@ public class VideoPlayerHelper implements OnPreparedListener,
             // Log.d( LOGTAG,
             return -1;
         }
-        
+
         if ((mCurrentState == MEDIA_STATE.NOT_READY)
             || (mCurrentState == MEDIA_STATE.ERROR))
         {
             // Log.d( LOGTAG, "Cannot get the video length if it is not ready");
             return -1;
         }
-        
+
         int result = -1;
         mMediaPlayerLock.lock();
         if (mMediaPlayer != null)
             result = mMediaPlayer.getDuration() / 1000;
         mMediaPlayerLock.unlock();
-        
+
         return result;
     }
 
@@ -498,8 +498,8 @@ public class VideoPlayerHelper implements OnPreparedListener,
         
         return result;
     }
-    
-    
+
+
     public boolean stop()
     {
         if (!isPlayableOnTexture())
@@ -508,16 +508,16 @@ public class VideoPlayerHelper implements OnPreparedListener,
             // "Cannot stop this video since it is not on texture");
             return false;
         }
-        
+
         if ((mCurrentState == MEDIA_STATE.NOT_READY)
             || (mCurrentState == MEDIA_STATE.ERROR))
         {
             // Log.d( LOGTAG, "Cannot stop this video if it is not ready");
             return false;
         }
-        
+
         boolean result = false;
-        
+
         mMediaPlayerLock.lock();
         if (mMediaPlayer != null)
         {
@@ -530,15 +530,15 @@ public class VideoPlayerHelper implements OnPreparedListener,
                 mMediaPlayerLock.unlock();
                 Log.e(LOGTAG, "Could not stop playback");
             }
-            
+
             result = true;
         }
         mMediaPlayerLock.unlock();
-        
+
         return result;
     }
-    
-    
+
+
     @SuppressLint("NewApi")
     public byte updateVideoData()
     {
@@ -564,8 +564,8 @@ public class VideoPlayerHelper implements OnPreparedListener,
         
         return result;
     }
-    
-    
+
+
     public boolean seekTo(int position)
     {
         if (!isPlayableOnTexture())
@@ -574,7 +574,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
             // "Cannot seek-to on this video since it is not on texture");
             return false;
         }
-        
+
         if ((mCurrentState == MEDIA_STATE.NOT_READY)
             || (mCurrentState == MEDIA_STATE.ERROR))
         {
@@ -582,7 +582,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
             // "Cannot seek-to on this video if it is not ready");
             return false;
         }
-        
+
         boolean result = false;
         mMediaPlayerLock.lock();
         if (mMediaPlayer != null)
@@ -598,11 +598,11 @@ public class VideoPlayerHelper implements OnPreparedListener,
             result = true;
         }
         mMediaPlayerLock.unlock();
-        
+
         return result;
     }
-    
-    
+
+
     public int getCurrentPosition()
     {
         if (!isPlayableOnTexture())
@@ -628,8 +628,8 @@ public class VideoPlayerHelper implements OnPreparedListener,
         
         return result;
     }
-    
-    
+
+
     public boolean setVolume(float value)
     {
         if (!isPlayableOnTexture())
@@ -638,7 +638,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
             // "Cannot set the volume of this video since it is not on texture");
             return false;
         }
-        
+
         if ((mCurrentState == MEDIA_STATE.NOT_READY)
             || (mCurrentState == MEDIA_STATE.ERROR))
         {
@@ -646,7 +646,7 @@ public class VideoPlayerHelper implements OnPreparedListener,
             // "Cannot set the volume of this video if it is not ready");
             return false;
         }
-        
+
         boolean result = false;
         mMediaPlayerLock.lock();
         if (mMediaPlayer != null)
@@ -655,17 +655,17 @@ public class VideoPlayerHelper implements OnPreparedListener,
             result = true;
         }
         mMediaPlayerLock.unlock();
-        
+
         return result;
     }
-    
+
 
     public int getCurrentBufferingPercentage()
     {
         return mCurrentBufferingPercentage;
     }
-    
-    
+
+
     public void onBufferingUpdate(MediaPlayer arg0, int arg1)
     {
         // Log.d( LOGTAG, "onBufferingUpdate " + arg1);

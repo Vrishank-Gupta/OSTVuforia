@@ -14,7 +14,7 @@ public class SampleApplicationException extends Exception
     public static final int CAMERA_INITIALIZATION_FAILURE = 6;
     public static final int SET_FOCUS_MODE_FAILURE = 7;
     public static final int ACTIVATE_FLASH_FAILURE = 8;
-    
+
     private int mCode = -1;
     private String mString = "";
     
@@ -25,14 +25,14 @@ public class SampleApplicationException extends Exception
         mCode = code;
         mString = description;
     }
-    
-    
+
+
     public int getCode()
     {
         return mCode;
     }
-    
-    
+
+
     public String getString()
     {
         return mString;

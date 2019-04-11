@@ -266,31 +266,31 @@ public class SampleApplicationSession implements UpdateCallbackInterface
         }
         
     }
-    
-    
+
+
     public void onResume()
     {
         Vuforia.onResume();
     }
-    
-    
+
+
     public void onPause()
     {
         Vuforia.onPause();
     }
-    
-    
+
+
     public void onSurfaceChanged(int width, int height)
     {
         Vuforia.onSurfaceChanged(width, height);
     }
-    
-    
+
+
     public void onSurfaceCreated()
     {
         Vuforia.onSurfaceCreated();
     }
-    
+
     private class InitVuforiaTask extends AsyncTask<Void, Integer, Boolean>
     {
         private int mProgressValue = -1;

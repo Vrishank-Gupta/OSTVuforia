@@ -20,24 +20,24 @@ public class SampleMath
     private static Vec3F mLineStart = new Vec3F();
     private static Vec3F mLineEnd = new Vec3F();
     private static Vec3F mIntersection = new Vec3F();
-    
-    
+
+
     public static Vec2F Vec2FSub(Vec2F v1, Vec2F v2)
     {
         temp[0] = v1.getData()[0] - v2.getData()[0];
         temp[1] = v1.getData()[1] - v2.getData()[1];
         return new Vec2F(temp[0], temp[1]);
     }
-    
-    
+
+
     public static float Vec2FDist(Vec2F v1, Vec2F v2)
     {
         float dx = v1.getData()[0] - v2.getData()[0];
         float dy = v1.getData()[1] - v2.getData()[1];
         return (float) Math.sqrt(dx * dx + dy * dy);
     }
-    
-    
+
+
     public static Vec3F Vec3FAdd(Vec3F v1, Vec3F v2)
     {
         temp[0] = v1.getData()[0] + v2.getData()[0];
@@ -70,8 +70,8 @@ public class SampleMath
         return v1.getData()[0] * v2.getData()[0] + v1.getData()[1]
             * v2.getData()[1] + v1.getData()[2] * v2.getData()[2];
     }
-    
-    
+
+
     public static Vec3F Vec3FCross(Vec3F v1, Vec3F v2)
     {
         temp[0] = v1.getData()[1] * v2.getData()[2] - v1.getData()[2]
@@ -82,8 +82,8 @@ public class SampleMath
             * v2.getData()[0];
         return new Vec3F(temp[0], temp[1], temp[2]);
     }
-    
-    
+
+
     public static Vec3F Vec3FNormalize(Vec3F v)
     {
         float length = (float) Math
@@ -98,15 +98,15 @@ public class SampleMath
         
         return new Vec3F(temp[0], temp[1], temp[2]);
     }
-    
-    
+
+
     public static Vec3F Vec3FTransform(Vec3F v, Matrix44F m)
     {
         float lambda;
         lambda = m.getData()[12] * v.getData()[0] + m.getData()[13]
             * v.getData()[1] + m.getData()[14] * v.getData()[2]
             + m.getData()[15];
-        
+
         temp[0] = m.getData()[0] * v.getData()[0] + m.getData()[1]
             * v.getData()[1] + m.getData()[2] * v.getData()[2] + m.getData()[3];
         temp[1] = m.getData()[4] * v.getData()[0] + m.getData()[5]
@@ -114,15 +114,15 @@ public class SampleMath
         temp[2] = m.getData()[8] * v.getData()[0] + m.getData()[9]
             * v.getData()[1] + m.getData()[10] * v.getData()[2]
             + m.getData()[11];
-        
+
         temp[0] /= lambda;
         temp[1] /= lambda;
         temp[2] /= lambda;
-        
+
         return new Vec3F(temp[0], temp[1], temp[2]);
     }
-    
-    
+
+
     public static Vec3F Vec3FTransformNormal(Vec3F v, Matrix44F m)
     {
         temp[0] = m.getData()[0] * v.getData()[0] + m.getData()[1]
@@ -131,11 +131,11 @@ public class SampleMath
             * v.getData()[1] + m.getData()[6] * v.getData()[2];
         temp[2] = m.getData()[8] * v.getData()[0] + m.getData()[9]
             * v.getData()[1] + m.getData()[10] * v.getData()[2];
-        
+
         return new Vec3F(temp[0], temp[1], temp[2]);
     }
-    
-    
+
+
     public static Vec4F Vec4FTransform(Vec4F v, Matrix44F m)
     {
         temp[0] = m.getData()[0] * v.getData()[0] + m.getData()[1]
@@ -163,38 +163,38 @@ public class SampleMath
         temp[3] = v.getData()[3] / s;
         return new Vec4F(temp[0], temp[1], temp[2], temp[3]);
     }
-    
-    
+
+
     public static Matrix44F Matrix44FIdentity()
     {
         Matrix44F r = new Matrix44F();
-        
+
         for (int i = 0; i < 16; i++)
             temp[i] = 0.0f;
-        
+
         temp[0] = 1.0f;
         temp[5] = 1.0f;
         temp[10] = 1.0f;
         temp[15] = 1.0f;
-        
+
         r.setData(temp);
-        
+
         return r;
     }
-    
-    
+
+
     public static Matrix44F Matrix44FTranspose(Matrix44F m)
     {
         Matrix44F r = new Matrix44F();
         for (int i = 0; i < 4; i++)
             for (int j = 0; j < 4; j++)
                 temp[i * 4 + j] = m.getData()[i + 4 * j];
-        
+
         r.setData(temp);
         return r;
     }
-    
-    
+
+
     public static float Matrix44FDeterminate(Matrix44F m)
     {
         return m.getData()[12] * m.getData()[9] * m.getData()[6]
@@ -440,8 +440,8 @@ public class SampleMath
             screenWidth, screenHeight, point, planeCenter, planeNormal);
         return mIntersection;
     }
-    
-    
+
+
     public static Vec3F getPointToPlaneLineStart(Matrix44F inverseProjMatrix,
         Matrix44F modelViewMatrix, float screenWidth, float screenHeight,
         Vec2F point, Vec3F planeCenter, Vec3F planeNormal)
@@ -450,8 +450,8 @@ public class SampleMath
             screenWidth, screenHeight, point, planeCenter, planeNormal);
         return mLineStart;
     }
-    
-    
+
+
     public static Vec3F getPointToPlaneLineEnd(Matrix44F inverseProjMatrix,
         Matrix44F modelViewMatrix, float screenWidth, float screenHeight,
         Vec2F point, Vec3F planeCenter, Vec3F planeNormal)

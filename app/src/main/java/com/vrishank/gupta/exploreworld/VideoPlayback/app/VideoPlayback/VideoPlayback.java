@@ -55,7 +55,7 @@ public class VideoPlayback extends Activity implements
     
     private GestureDetector mGestureDetector = null;
     private SimpleOnGestureListener mSimpleListener = null;
-    
+
     public static final int NUM_TARGETS = 2;
     public static final int STONES = 0;
     public static final int CHIPS = 1;
@@ -617,9 +617,9 @@ public class VideoPlayback extends Activity implements
             mSampleAppMenu = new SampleAppMenu(this, this, "ExploreWorld",
                 mGlView, mUILayout, null);
             setSampleAppMenuSettings();
-            
+
             mIsInitialized = true;
-            
+
         } else
         {
             Log.e(LOGTAG, exception.getString());
